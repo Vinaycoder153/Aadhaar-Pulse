@@ -1,0 +1,176 @@
+.main {
+  min-height: 100vh;
+  padding-top: 80px;
+  /* Navbar height */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  padding: 4rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.heroGlow {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  height: 60vh;
+  background: radial-gradient(circle, var(--color-primary-glow) 0%, rgba(0, 0, 0, 0) 70%);
+  opacity: 0.4;
+  z-index: -1;
+  filter: blur(80px);
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnSecondary {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.heroVisual {
+  position: relative;
+}
+
+.visualGraph {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.bar {
+  flex: 1;
+  background: linear-gradient(to top, var(--color-primary), var(--color-secondary));
+  border-radius: 4px 4px 0 0;
+  opacity: 0.8;
+  animation: barGrow 1.5s ease-out forwards, barPulse 3s infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes barGrow {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes barPulse {
+  0% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.modules {
+  padding: 4rem 0;
+  position: relative;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.cardDesc {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.demoVisual {
+  margin-top: 1.5rem;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.trendLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-secondary);
+  box-shadow: 0 0 10px var(--color-secondary);
+}
+
+@media (max-width: 900px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .heroSubtitle {
+    margin: 0 auto 2.5rem;
+  }
+
+  .heroActions {
+    justify-content: center;
+  }
+}

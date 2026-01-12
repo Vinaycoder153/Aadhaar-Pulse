@@ -1,0 +1,698 @@
+{
+  "trends": [
+    {
+      "date": "01-03-2025",
+      "value": 11147558
+    },
+    {
+      "date": "01-04-2025",
+      "value": 1515672
+    },
+    {
+      "date": "01-05-2025",
+      "value": 1566287
+    },
+    {
+      "date": "01-06-2025",
+      "value": 1685562
+    },
+    {
+      "date": "01-07-2025",
+      "value": 2220715
+    },
+    {
+      "date": "01-09-2025",
+      "value": 434325
+    },
+    {
+      "date": "02-09-2025",
+      "value": 435282
+    },
+    {
+      "date": "03-09-2025",
+      "value": 314732
+    },
+    {
+      "date": "04-09-2025",
+      "value": 383726
+    },
+    {
+      "date": "05-09-2025",
+      "value": 273954
+    },
+    {
+      "date": "06-09-2025",
+      "value": 368240
+    },
+    {
+      "date": "07-09-2025",
+      "value": 89031
+    },
+    {
+      "date": "08-09-2025",
+      "value": 535632
+    },
+    {
+      "date": "09-09-2025",
+      "value": 508624
+    },
+    {
+      "date": "10-09-2025",
+      "value": 483163
+    },
+    {
+      "date": "11-09-2025",
+      "value": 377653
+    },
+    {
+      "date": "12-09-2025",
+      "value": 438856
+    },
+    {
+      "date": "13-09-2025",
+      "value": 318637
+    },
+    {
+      "date": "14-09-2025",
+      "value": 94967
+    },
+    {
+      "date": "15-09-2025",
+      "value": 405790
+    },
+    {
+      "date": "16-09-2025",
+      "value": 372527
+    },
+    {
+      "date": "17-09-2025",
+      "value": 348156
+    },
+    {
+      "date": "18-09-2025",
+      "value": 435090
+    },
+    {
+      "date": "19-09-2025",
+      "value": 362761
+    },
+    {
+      "date": "20-09-2025",
+      "value": 342914
+    },
+    {
+      "date": "13-10-2025",
+      "value": 204808
+    },
+    {
+      "date": "15-10-2025",
+      "value": 462577
+    },
+    {
+      "date": "16-10-2025",
+      "value": 493841
+    },
+    {
+      "date": "17-10-2025",
+      "value": 323151
+    },
+    {
+      "date": "18-10-2025",
+      "value": 173228
+    },
+    {
+      "date": "19-10-2025",
+      "value": 233340
+    },
+    {
+      "date": "20-10-2025",
+      "value": 112017
+    },
+    {
+      "date": "21-10-2025",
+      "value": 57390
+    },
+    {
+      "date": "22-10-2025",
+      "value": 10448
+    },
+    {
+      "date": "23-10-2025",
+      "value": 25159
+    },
+    {
+      "date": "24-10-2025",
+      "value": 427481
+    },
+    {
+      "date": "25-10-2025",
+      "value": 391813
+    },
+    {
+      "date": "26-10-2025",
+      "value": 416260
+    },
+    {
+      "date": "27-10-2025",
+      "value": 181364
+    },
+    {
+      "date": "28-10-2025",
+      "value": 229427
+    },
+    {
+      "date": "29-10-2025",
+      "value": 346481
+    },
+    {
+      "date": "30-10-2025",
+      "value": 292866
+    },
+    {
+      "date": "31-10-2025",
+      "value": 629315
+    },
+    {
+      "date": "01-11-2025",
+      "value": 473800
+    },
+    {
+      "date": "02-11-2025",
+      "value": 189478
+    },
+    {
+      "date": "03-11-2025",
+      "value": 481800
+    },
+    {
+      "date": "04-11-2025",
+      "value": 529318
+    },
+    {
+      "date": "05-11-2025",
+      "value": 259691
+    },
+    {
+      "date": "06-11-2025",
+      "value": 592379
+    },
+    {
+      "date": "07-11-2025",
+      "value": 467135
+    },
+    {
+      "date": "08-11-2025",
+      "value": 479859
+    },
+    {
+      "date": "09-11-2025",
+      "value": 147786
+    },
+    {
+      "date": "10-11-2025",
+      "value": 496555
+    },
+    {
+      "date": "11-11-2025",
+      "value": 358443
+    },
+    {
+      "date": "12-11-2025",
+      "value": 543863
+    },
+    {
+      "date": "13-11-2025",
+      "value": 341438
+    },
+    {
+      "date": "14-11-2025",
+      "value": 468301
+    },
+    {
+      "date": "15-11-2025",
+      "value": 432978
+    },
+    {
+      "date": "16-11-2025",
+      "value": 110125
+    },
+    {
+      "date": "17-11-2025",
+      "value": 367005
+    },
+    {
+      "date": "18-11-2025",
+      "value": 438524
+    },
+    {
+      "date": "19-11-2025",
+      "value": 437935
+    },
+    {
+      "date": "25-11-2025",
+      "value": 109532
+    },
+    {
+      "date": "26-11-2025",
+      "value": 292015
+    },
+    {
+      "date": "27-11-2025",
+      "value": 678684
+    },
+    {
+      "date": "28-11-2025",
+      "value": 446681
+    },
+    {
+      "date": "29-11-2025",
+      "value": 244276
+    },
+    {
+      "date": "01-12-2025",
+      "value": 286586
+    },
+    {
+      "date": "02-12-2025",
+      "value": 469499
+    },
+    {
+      "date": "03-12-2025",
+      "value": 450303
+    },
+    {
+      "date": "04-12-2025",
+      "value": 477502
+    },
+    {
+      "date": "05-12-2025",
+      "value": 303531
+    },
+    {
+      "date": "06-12-2025",
+      "value": 271098
+    },
+    {
+      "date": "07-12-2025",
+      "value": 210119
+    },
+    {
+      "date": "08-12-2025",
+      "value": 590988
+    },
+    {
+      "date": "09-12-2025",
+      "value": 310538
+    },
+    {
+      "date": "10-12-2025",
+      "value": 308007
+    },
+    {
+      "date": "11-12-2025",
+      "value": 465340
+    },
+    {
+      "date": "12-12-2025",
+      "value": 529129
+    },
+    {
+      "date": "13-12-2025",
+      "value": 275083
+    },
+    {
+      "date": "14-12-2025",
+      "value": 220019
+    },
+    {
+      "date": "15-12-2025",
+      "value": 346058
+    },
+    {
+      "date": "16-12-2025",
+      "value": 462057
+    },
+    {
+      "date": "18-12-2025",
+      "value": 41401
+    },
+    {
+      "date": "19-12-2025",
+      "value": 366973
+    },
+    {
+      "date": "20-12-2025",
+      "value": 252671
+    },
+    {
+      "date": "21-12-2025",
+      "value": 181831
+    },
+    {
+      "date": "22-12-2025",
+      "value": 263214
+    },
+    {
+      "date": "23-12-2025",
+      "value": 488460
+    },
+    {
+      "date": "24-12-2025",
+      "value": 242245
+    },
+    {
+      "date": "25-12-2025",
+      "value": 253401
+    },
+    {
+      "date": "26-12-2025",
+      "value": 433763
+    },
+    {
+      "date": "27-12-2025",
+      "value": 445937
+    },
+    {
+      "date": "28-12-2025",
+      "value": 214513
+    },
+    {
+      "date": "29-12-2025",
+      "value": 276500
+    }
+  ],
+  "heatmap": [
+    {
+      "id": "Uttar Pradesh",
+      "value": 8542328
+    },
+    {
+      "id": "Maharashtra",
+      "value": 5054602
+    },
+    {
+      "id": "Bihar",
+      "value": 4814350
+    },
+    {
+      "id": "West Bengal",
+      "value": 3872172
+    },
+    {
+      "id": "Madhya Pradesh",
+      "value": 2912938
+    },
+    {
+      "id": "Rajasthan",
+      "value": 2817615
+    },
+    {
+      "id": "Andhra Pradesh",
+      "value": 2295505
+    },
+    {
+      "id": "Tamil Nadu",
+      "value": 2212228
+    },
+    {
+      "id": "Chhattisgarh",
+      "value": 2005434
+    },
+    {
+      "id": "Gujarat",
+      "value": 1824327
+    },
+    {
+      "id": "Karnataka",
+      "value": 1695285
+    },
+    {
+      "id": "Telangana",
+      "value": 1629908
+    },
+    {
+      "id": "Delhi",
+      "value": 1438934
+    },
+    {
+      "id": "Jharkhand",
+      "value": 1401189
+    },
+    {
+      "id": "Haryana",
+      "value": 1166140
+    },
+    {
+      "id": "Odisha",
+      "value": 1083237
+    },
+    {
+      "id": "Assam",
+      "value": 1012578
+    },
+    {
+      "id": "Punjab",
+      "value": 881895
+    },
+    {
+      "id": "Kerala",
+      "value": 744952
+    },
+    {
+      "id": "Uttarakhand",
+      "value": 463637
+    },
+    {
+      "id": "Jammu and Kashmir",
+      "value": 406776
+    },
+    {
+      "id": "Manipur",
+      "value": 301549
+    },
+    {
+      "id": "Himachal Pradesh",
+      "value": 149214
+    },
+    {
+      "id": "Tripura",
+      "value": 138013
+    },
+    {
+      "id": "Meghalaya",
+      "value": 87378
+    },
+    {
+      "id": "Chandigarh",
+      "value": 83361
+    },
+    {
+      "id": "Mizoram",
+      "value": 41906
+    },
+    {
+      "id": "Nagaland",
+      "value": 36791
+    },
+    {
+      "id": "Arunachal Pradesh",
+      "value": 36443
+    },
+    {
+      "id": "Goa",
+      "value": 35120
+    },
+    {
+      "id": "Orissa",
+      "value": 28758
+    },
+    {
+      "id": "Puducherry",
+      "value": 25304
+    },
+    {
+      "id": "Sikkim",
+      "value": 20340
+    },
+    {
+      "id": "Pondicherry",
+      "value": 7459
+    },
+    {
+      "id": "Andaman and Nicobar Islands",
+      "value": 6187
+    },
+    {
+      "id": "Dadra and Nagar Haveli",
+      "value": 6033
+    },
+    {
+      "id": "Ladakh",
+      "value": 5735
+    },
+    {
+      "id": "Dadra and Nagar Haveli and Daman and Diu",
+      "value": 3740
+    },
+    {
+      "id": "Daman and Diu",
+      "value": 1552
+    },
+    {
+      "id": "Lakshadweep",
+      "value": 1176
+    },
+    {
+      "id": "Andaman & Nicobar Islands",
+      "value": 1059
+    },
+    {
+      "id": "Daman & Diu",
+      "value": 644
+    },
+    {
+      "id": "Jammu & Kashmir",
+      "value": 426
+    },
+    {
+      "id": "Dadra & Nagar Haveli",
+      "value": 235
+    },
+    {
+      "id": "West Bangal",
+      "value": 157
+    },
+    {
+      "id": "West  Bengal",
+      "value": 107
+    },
+    {
+      "id": "Westbengal",
+      "value": 95
+    },
+    {
+      "id": "andhra pradesh",
+      "value": 77
+    },
+    {
+      "id": "WEST BENGAL",
+      "value": 71
+    },
+    {
+      "id": "West bengal",
+      "value": 60
+    },
+    {
+      "id": "WESTBENGAL",
+      "value": 57
+    },
+    {
+      "id": "ODISHA",
+      "value": 50
+    },
+    {
+      "id": "odisha",
+      "value": 20
+    },
+    {
+      "id": "west Bengal",
+      "value": 15
+    },
+    {
+      "id": "Uttaranchal",
+      "value": 5
+    },
+    {
+      "id": "Chhatisgarh",
+      "value": 4
+    },
+    {
+      "id": "West Bengli",
+      "value": 3
+    },
+    {
+      "id": "100000",
+      "value": 2
+    },
+    {
+      "id": "Darbhanga",
+      "value": 2
+    },
+    {
+      "id": "BALANAGAR",
+      "value": 2
+    },
+    {
+      "id": "Jaipur",
+      "value": 2
+    },
+    {
+      "id": "Madanapalle",
+      "value": 2
+    },
+    {
+      "id": "Puttenahalli",
+      "value": 1
+    },
+    {
+      "id": "Nagpur",
+      "value": 1
+    },
+    {
+      "id": "Raja Annamalai Puram",
+      "value": 1
+    }
+  ],
+  "topDistricts": [
+    {
+      "district": "Thane",
+      "state": "Maharashtra",
+      "total": 447253
+    },
+    {
+      "district": "Pune",
+      "state": "Maharashtra",
+      "total": 438478
+    },
+    {
+      "district": "South 24 Parganas",
+      "state": "West Bengal",
+      "total": 401176
+    },
+    {
+      "district": "Murshidabad",
+      "state": "West Bengal",
+      "total": 371953
+    },
+    {
+      "district": "Surat",
+      "state": "Gujarat",
+      "total": 357582
+    },
+    {
+      "district": "North West Delhi",
+      "state": "Delhi",
+      "total": 313989
+    },
+    {
+      "district": "Bengaluru",
+      "state": "Karnataka",
+      "total": 303924
+    },
+    {
+      "district": "North 24 Parganas",
+      "state": "West Bengal",
+      "total": 290477
+    },
+    {
+      "district": "Jaipur",
+      "state": "Rajasthan",
+      "total": 275340
+    },
+    {
+      "district": "Uttar Dinajpur",
+      "state": "West Bengal",
+      "total": 270232
+    }
+  ]
+}

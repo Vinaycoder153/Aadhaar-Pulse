@@ -1,114 +1,73 @@
+import { promises as fs } from 'fs';
+import path from 'path';
 import Navbar from '@/components/Navbar';
+import TrendExplorer from '@/components/TrendExplorer';
+import InequalityHeatmap from '@/components/InequalityHeatmap';
+import AnomalyRadar from '@/components/AnomalyRadar';
 import styles from './page.module.css';
+import { DashboardData } from '@/types';
 
-export default function Home() {
+async function getDashboardData(): Promise<DashboardData> {
+  const filePath = path.join(process.cwd(), 'public', 'data', 'summary.json');
+  const fileContents = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(fileContents);
+}
+
+export default async function Home() {
+  const data = await getDashboardData();
+
   return (
-    <main className={styles.main}>
+    <main className="min-h-screen pt-20 overflow-hidden bg-[var(--bg-app)]">
       <Navbar />
 
       {/* Hero Section */}
-      <section className={styles.hero}>
+      <section className={`${styles.hero} container mx-auto px-4`}>
         <div className={styles.heroGlow} />
-        <div className={`container ${styles.heroContent}`}>
-          <div className="animate-fade-in">
-            <h1 className={styles.heroTitle}>
-              Decoding India's <br />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="animate-fade-in z-10">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 hidden-h1">
+              Decoding India&apos;s <br />
               <span className="text-gradient">Digital Pulse</span>
             </h1>
-            <p className={styles.heroSubtitle}>
+            <p className="text-xl text-[var(--text-muted)] mb-10 max-w-lg">
               Transforming Aadhaar enrolment and update data into actionable societal insights,
               real-time anomaly detection, and predictive foresight.
             </p>
-            <div className={styles.heroActions}>
-              <button className="btn-primary">Explore Trends</button>
-              <button className={styles.btnSecondary}>Watch Demo</button>
+            <div className="flex gap-4">
+              <button className="btn-primary group">
+                Explore Trends
+                <span className="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+              </button>
+              <button className="px-6 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
+                Watch Demo
+              </button>
             </div>
           </div>
 
-          <div className={`${styles.heroVisual} animate-fade-in`} style={{ animationDelay: '0.2s' }}>
-            <div className="glass-panel" style={{ padding: '2rem', height: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              {/* Abstract Data Visualization */}
-              <div className={styles.visualGraph}>
-                {[...Array(12)].map((_, i) => (
-                  <div key={i} className={styles.bar} style={{
-                    height: `${Math.random() * 60 + 20}%`,
-                    animationDelay: `${i * 0.1}s`
-                  }} />
-                ))}
-              </div>
+          <div className="relative h-[400px] lg:h-[500px] w-full animate-fade-in delay-100">
+            <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-blue-500/10 rounded-3xl blur-2xl" />
+            <div className="relative h-full w-full glass-panel overflow-hidden p-1">
+              <TrendExplorer data={data.trends} />
             </div>
           </div>
         </div>
       </section>
 
       {/* Modules Grid */}
-      <section className={styles.modules}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>Intelligence Modules</h2>
-          <div className="grid-cols-2">
+      <section className="py-20 container mx-auto px-4 relative z-10">
+        <h2 className="text-4xl font-bold text-center mb-16">Intelligence Modules</h2>
 
-            {/* 1. Trend Explorer */}
-            <div className="glass-panel" style={{ padding: '2rem' }}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconBox} style={{ background: 'rgba(56, 189, 248, 0.1)', color: '#38bdf8' }}>
-                  📊
-                </div>
-                <h3>Societal Trend Explorer</h3>
-              </div>
-              <p className={styles.cardDesc}>
-                Visualize enrolment growth and update patterns across demographics.
-                See how migration trends shift post-2020.
-              </p>
-              <div className={styles.demoVisual}>
-                <div className={styles.trendLine} />
-              </div>
-            </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div id="heatmap" className="h-[450px]">
+            <InequalityHeatmap data={data.heatmap} />
+          </div>
 
-            {/* 2. Heatmap */}
-            <div className="glass-panel" style={{ padding: '2rem' }}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconBox} style={{ background: 'rgba(232, 121, 249, 0.1)', color: '#e879f9' }}>
-                  🗺️
-                </div>
-                <h3>Regional Inequality Heatmap</h3>
-              </div>
-              <p className={styles.cardDesc}>
-                Identify digital divides and low-enrolment clusters.
-                Zoom from national view to district level instantly.
-              </p>
-            </div>
-
-            {/* 3. Anomaly Radar */}
-            <div className="glass-panel" style={{ padding: '2rem', borderColor: 'rgba(255, 99, 99, 0.3)' }}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconBox} style={{ background: 'rgba(255, 99, 99, 0.1)', color: '#ff6363' }}>
-                  🚨
-                </div>
-                <h3 className="text-gradient-alert">Anomaly Radar</h3>
-              </div>
-              <p className={styles.cardDesc}>
-                Detect sudden enrolment drops or unusual update spikes.
-                "District X shows 3.4x address updates."
-              </p>
-            </div>
-
-            {/* 4. Predictive Foresight */}
-            <div className="glass-panel" style={{ padding: '2rem' }}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconBox} style={{ background: 'rgba(167, 139, 250, 0.1)', color: '#a78bfa' }}>
-                  🔮
-                </div>
-                <h3>Predictive Foresight</h3>
-              </div>
-              <p className={styles.cardDesc}>
-                Forecast resource pressure points for the next 3-6 months.
-                Plan centers and staffing proactively.
-              </p>
-            </div>
-
+          <div id="anomaly" className="h-[450px]">
+            <AnomalyRadar data={data.topDistricts} />
           </div>
         </div>
       </section>
+
     </main>
   );
 }

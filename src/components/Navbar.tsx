@@ -16,7 +16,6 @@ export default function Navbar() {
                     <Link href="#trends" className={styles.navLink}>Explorer</Link>
                     <Link href="#heatmap" className={styles.navLink}>Heatmap</Link>
                     <Link href="#anomaly" className={styles.navLink}>Anomalies</Link>
-                    <Link href="#forecast" className={styles.navLink}>Foresight</Link>
                 </div>
 
                 <button className="btn-primary">

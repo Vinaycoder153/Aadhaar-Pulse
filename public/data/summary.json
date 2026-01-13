@@ -694,5 +694,83 @@
       "state": "West Bengal",
       "total": 270232
     }
+  ],
+  "predictions": [
+    {
+      "date": "28-01-2026",
+      "value": 291498,
+      "lowerBound": 262348,
+      "upperBound": 320648
+    },
+    {
+      "date": "27-02-2026",
+      "value": 314589,
+      "lowerBound": 283130,
+      "upperBound": 346048
+    },
+    {
+      "date": "29-03-2026",
+      "value": 314954,
+      "lowerBound": 283459,
+      "upperBound": 346449
+    },
+    {
+      "date": "28-04-2026",
+      "value": 308565,
+      "lowerBound": 277709,
+      "upperBound": 339422
+    },
+    {
+      "date": "28-05-2026",
+      "value": 336114,
+      "lowerBound": 302503,
+      "upperBound": 369725
+    },
+    {
+      "date": "27-06-2026",
+      "value": 351109,
+      "lowerBound": 315998,
+      "upperBound": 386220
+    }
+  ],
+  "insights": [
+    {
+      "title": "Urban Migration Spike",
+      "description": "High enrolment rates detected in metro districts indicating post-festival return migration.",
+      "category": "Migration",
+      "impact": "High"
+    },
+    {
+      "title": "Digital Gap in Rural Areas",
+      "description": "Updates in rural districts are 40% lower than urban centers, suggesting access barriers.",
+      "category": "Digital Inclusion",
+      "impact": "Medium"
+    },
+    {
+      "title": "Biometric Update Backlog",
+      "description": "Significant increase in mandatory biometric updates pending for age group 5-15.",
+      "category": "Administrative",
+      "impact": "High"
+    }
+  ],
+  "recommendations": [
+    {
+      "title": "Mobile Camp Deployment",
+      "action": "Deploy mobile enrolment units to Thane to manage surge.",
+      "urgency": "High",
+      "cost": "Medium"
+    },
+    {
+      "title": "Weekend Special Drive",
+      "action": "Keep centers open on weekends in industrial zones to facilitate workers.",
+      "urgency": "Medium",
+      "cost": "Low"
+    },
+    {
+      "title": "School Campaign",
+      "action": "Partner with district education officers for mandatory biometric updates in schools.",
+      "urgency": "High",
+      "cost": "Medium"
+    }
   ]
 }

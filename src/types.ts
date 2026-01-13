@@ -1,6 +1,11 @@
 export interface TrendData {
     date: string;
     value: number;
+    overall?: number;
+    biometric?: number;
+    demographic?: number;
+    male?: number;
+    female?: number;
 }
 
 export interface StateData {

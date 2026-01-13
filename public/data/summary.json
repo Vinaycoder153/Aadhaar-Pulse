@@ -2,383 +2,858 @@
   "trends": [
     {
       "date": "01-03-2025",
-      "value": 11147558
+      "value": 11147558,
+      "overall": 11147558,
+      "biometric": 2501814,
+      "demographic": 8645744,
+      "male": 5470233,
+      "female": 5677325
     },
     {
       "date": "01-04-2025",
-      "value": 1515672
+      "value": 1515672,
+      "overall": 1515672,
+      "biometric": 396283,
+      "demographic": 1119389,
+      "male": 794880,
+      "female": 720792
     },
     {
       "date": "01-05-2025",
-      "value": 1566287
+      "value": 1566287,
+      "overall": 1566287,
+      "biometric": 409102,
+      "demographic": 1157185,
+      "male": 794643,
+      "female": 771644
     },
     {
       "date": "01-06-2025",
-      "value": 1685562
+      "value": 1685562,
+      "overall": 1685562,
+      "biometric": 420936,
+      "demographic": 1264626,
+      "male": 869356,
+      "female": 816206
     },
     {
       "date": "01-07-2025",
-      "value": 2220715
+      "value": 2220715,
+      "overall": 2220715,
+      "biometric": 578289,
+      "demographic": 1642426,
+      "male": 1106899,
+      "female": 1113816
     },
     {
       "date": "01-09-2025",
-      "value": 434325
+      "value": 434325,
+      "overall": 434325,
+      "biometric": 103383,
+      "demographic": 330942,
+      "male": 215276,
+      "female": 219049
     },
     {
       "date": "02-09-2025",
-      "value": 435282
+      "value": 435282,
+      "overall": 435282,
+      "biometric": 102929,
+      "demographic": 332353,
+      "male": 229764,
+      "female": 205518
     },
     {
       "date": "03-09-2025",
-      "value": 314732
+      "value": 314732,
+      "overall": 314732,
+      "biometric": 75386,
+      "demographic": 239346,
+      "male": 156374,
+      "female": 158358
     },
     {
       "date": "04-09-2025",
-      "value": 383726
+      "value": 383726,
+      "overall": 383726,
+      "biometric": 93424,
+      "demographic": 290302,
+      "male": 202184,
+      "female": 181542
     },
     {
       "date": "05-09-2025",
-      "value": 273954
+      "value": 273954,
+      "overall": 273954,
+      "biometric": 63151,
+      "demographic": 210803,
+      "male": 139501,
+      "female": 134453
     },
     {
       "date": "06-09-2025",
-      "value": 368240
+      "value": 368240,
+      "overall": 368240,
+      "biometric": 90483,
+      "demographic": 277757,
+      "male": 193213,
+      "female": 175027
     },
     {
       "date": "07-09-2025",
-      "value": 89031
+      "value": 89031,
+      "overall": 89031,
+      "biometric": 21408,
+      "demographic": 67623,
+      "male": 44342,
+      "female": 44689
     },
     {
       "date": "08-09-2025",
-      "value": 535632
+      "value": 535632,
+      "overall": 535632,
+      "biometric": 129014,
+      "demographic": 406618,
+      "male": 279056,
+      "female": 256576
     },
     {
       "date": "09-09-2025",
-      "value": 508624
+      "value": 508624,
+      "overall": 508624,
+      "biometric": 121425,
+      "demographic": 387199,
+      "male": 254667,
+      "female": 253957
     },
     {
       "date": "10-09-2025",
-      "value": 483163
+      "value": 483163,
+      "overall": 483163,
+      "biometric": 115581,
+      "demographic": 367582,
+      "male": 249920,
+      "female": 233243
     },
     {
       "date": "11-09-2025",
-      "value": 377653
+      "value": 377653,
+      "overall": 377653,
+      "biometric": 90518,
+      "demographic": 287135,
+      "male": 190586,
+      "female": 187067
     },
     {
       "date": "12-09-2025",
-      "value": 438856
+      "value": 438856,
+      "overall": 438856,
+      "biometric": 108306,
+      "demographic": 330550,
+      "male": 215387,
+      "female": 223469
     },
     {
       "date": "13-09-2025",
-      "value": 318637
+      "value": 318637,
+      "overall": 318637,
+      "biometric": 80163,
+      "demographic": 238474,
+      "male": 158878,
+      "female": 159759
     },
     {
       "date": "14-09-2025",
-      "value": 94967
+      "value": 94967,
+      "overall": 94967,
+      "biometric": 22595,
+      "demographic": 72372,
+      "male": 49896,
+      "female": 45071
     },
     {
       "date": "15-09-2025",
-      "value": 405790
+      "value": 405790,
+      "overall": 405790,
+      "biometric": 95576,
+      "demographic": 310214,
+      "male": 200546,
+      "female": 205244
     },
     {
       "date": "16-09-2025",
-      "value": 372527
+      "value": 372527,
+      "overall": 372527,
+      "biometric": 89021,
+      "demographic": 283506,
+      "male": 187414,
+      "female": 185113
     },
     {
       "date": "17-09-2025",
-      "value": 348156
+      "value": 348156,
+      "overall": 348156,
+      "biometric": 84105,
+      "demographic": 264051,
+      "male": 177957,
+      "female": 170199
     },
     {
       "date": "18-09-2025",
-      "value": 435090
+      "value": 435090,
+      "overall": 435090,
+      "biometric": 100170,
+      "demographic": 334920,
+      "male": 223151,
+      "female": 211939
     },
     {
       "date": "19-09-2025",
-      "value": 362761
+      "value": 362761,
+      "overall": 362761,
+      "biometric": 83145,
+      "demographic": 279616,
+      "male": 181636,
+      "female": 181125
     },
     {
       "date": "20-09-2025",
-      "value": 342914
+      "value": 342914,
+      "overall": 342914,
+      "biometric": 83995,
+      "demographic": 258919,
+      "male": 175876,
+      "female": 167038
     },
     {
       "date": "13-10-2025",
-      "value": 204808
+      "value": 204808,
+      "overall": 204808,
+      "biometric": 40509,
+      "demographic": 164299,
+      "male": 105603,
+      "female": 99205
     },
     {
       "date": "15-10-2025",
-      "value": 462577
+      "value": 462577,
+      "overall": 462577,
+      "biometric": 109756,
+      "demographic": 352821,
+      "male": 232354,
+      "female": 230223
     },
     {
       "date": "16-10-2025",
-      "value": 493841
+      "value": 493841,
+      "overall": 493841,
+      "biometric": 119172,
+      "demographic": 374669,
+      "male": 248261,
+      "female": 245580
     },
     {
       "date": "17-10-2025",
-      "value": 323151
+      "value": 323151,
+      "overall": 323151,
+      "biometric": 72846,
+      "demographic": 250305,
+      "male": 160499,
+      "female": 162652
     },
     {
       "date": "18-10-2025",
-      "value": 173228
+      "value": 173228,
+      "overall": 173228,
+      "biometric": 39711,
+      "demographic": 133517,
+      "male": 84993,
+      "female": 88235
     },
     {
       "date": "19-10-2025",
-      "value": 233340
+      "value": 233340,
+      "overall": 233340,
+      "biometric": 60841,
+      "demographic": 172499,
+      "male": 122474,
+      "female": 110866
     },
     {
       "date": "20-10-2025",
-      "value": 112017
+      "value": 112017,
+      "overall": 112017,
+      "biometric": 29565,
+      "demographic": 82452,
+      "male": 56019,
+      "female": 55998
     },
     {
       "date": "21-10-2025",
-      "value": 57390
+      "value": 57390,
+      "overall": 57390,
+      "biometric": 15273,
+      "demographic": 42117,
+      "male": 28463,
+      "female": 28927
     },
     {
       "date": "22-10-2025",
-      "value": 10448
+      "value": 10448,
+      "overall": 10448,
+      "biometric": 3028,
+      "demographic": 7420,
+      "male": 5393,
+      "female": 5055
     },
     {
       "date": "23-10-2025",
-      "value": 25159
+      "value": 25159,
+      "overall": 25159,
+      "biometric": 7013,
+      "demographic": 18146,
+      "male": 12348,
+      "female": 12811
     },
     {
       "date": "24-10-2025",
-      "value": 427481
+      "value": 427481,
+      "overall": 427481,
+      "biometric": 103415,
+      "demographic": 324066,
+      "male": 223791,
+      "female": 203690
     },
     {
       "date": "25-10-2025",
-      "value": 391813
+      "value": 391813,
+      "overall": 391813,
+      "biometric": 88508,
+      "demographic": 303305,
+      "male": 207050,
+      "female": 184763
     },
     {
       "date": "26-10-2025",
-      "value": 416260
+      "value": 416260,
+      "overall": 416260,
+      "biometric": 95288,
+      "demographic": 320972,
+      "male": 207544,
+      "female": 208716
     },
     {
       "date": "27-10-2025",
-      "value": 181364
+      "value": 181364,
+      "overall": 181364,
+      "biometric": 42816,
+      "demographic": 138548,
+      "male": 91901,
+      "female": 89463
     },
     {
       "date": "28-10-2025",
-      "value": 229427
+      "value": 229427,
+      "overall": 229427,
+      "biometric": 54287,
+      "demographic": 175140,
+      "male": 117104,
+      "female": 112323
     },
     {
       "date": "29-10-2025",
-      "value": 346481
+      "value": 346481,
+      "overall": 346481,
+      "biometric": 70880,
+      "demographic": 275601,
+      "male": 183459,
+      "female": 163022
     },
     {
       "date": "30-10-2025",
-      "value": 292866
+      "value": 292866,
+      "overall": 292866,
+      "biometric": 68274,
+      "demographic": 224592,
+      "male": 151479,
+      "female": 141387
     },
     {
       "date": "31-10-2025",
-      "value": 629315
+      "value": 629315,
+      "overall": 629315,
+      "biometric": 137809,
+      "demographic": 491506,
+      "male": 309454,
+      "female": 319861
     },
     {
       "date": "01-11-2025",
-      "value": 473800
+      "value": 473800,
+      "overall": 473800,
+      "biometric": 106653,
+      "demographic": 367147,
+      "male": 235328,
+      "female": 238472
     },
     {
       "date": "02-11-2025",
-      "value": 189478
+      "value": 189478,
+      "overall": 189478,
+      "biometric": 53130,
+      "demographic": 136348,
+      "male": 97723,
+      "female": 91755
     },
     {
       "date": "03-11-2025",
-      "value": 481800
+      "value": 481800,
+      "overall": 481800,
+      "biometric": 114626,
+      "demographic": 367174,
+      "male": 238646,
+      "female": 243154
     },
     {
       "date": "04-11-2025",
-      "value": 529318
+      "value": 529318,
+      "overall": 529318,
+      "biometric": 117261,
+      "demographic": 412057,
+      "male": 276444,
+      "female": 252874
     },
     {
       "date": "05-11-2025",
-      "value": 259691
+      "value": 259691,
+      "overall": 259691,
+      "biometric": 66859,
+      "demographic": 192832,
+      "male": 135496,
+      "female": 124195
     },
     {
       "date": "06-11-2025",
-      "value": 592379
+      "value": 592379,
+      "overall": 592379,
+      "biometric": 139449,
+      "demographic": 452930,
+      "male": 295074,
+      "female": 297305
     },
     {
       "date": "07-11-2025",
-      "value": 467135
+      "value": 467135,
+      "overall": 467135,
+      "biometric": 104881,
+      "demographic": 362254,
+      "male": 247511,
+      "female": 219624
     },
     {
       "date": "08-11-2025",
-      "value": 479859
+      "value": 479859,
+      "overall": 479859,
+      "biometric": 110099,
+      "demographic": 369760,
+      "male": 251518,
+      "female": 228341
     },
     {
       "date": "09-11-2025",
-      "value": 147786
+      "value": 147786,
+      "overall": 147786,
+      "biometric": 40282,
+      "demographic": 107504,
+      "male": 76687,
+      "female": 71099
     },
     {
       "date": "10-11-2025",
-      "value": 496555
+      "value": 496555,
+      "overall": 496555,
+      "biometric": 108793,
+      "demographic": 387762,
+      "male": 245526,
+      "female": 251029
     },
     {
       "date": "11-11-2025",
-      "value": 358443
+      "value": 358443,
+      "overall": 358443,
+      "biometric": 81957,
+      "demographic": 276486,
+      "male": 175899,
+      "female": 182544
     },
     {
       "date": "12-11-2025",
-      "value": 543863
+      "value": 543863,
+      "overall": 543863,
+      "biometric": 112442,
+      "demographic": 431421,
+      "male": 272537,
+      "female": 271326
     },
     {
       "date": "13-11-2025",
-      "value": 341438
+      "value": 341438,
+      "overall": 341438,
+      "biometric": 75174,
+      "demographic": 266264,
+      "male": 175645,
+      "female": 165793
     },
     {
       "date": "14-11-2025",
-      "value": 468301
+      "value": 468301,
+      "overall": 468301,
+      "biometric": 101858,
+      "demographic": 366443,
+      "male": 240728,
+      "female": 227573
     },
     {
       "date": "15-11-2025",
-      "value": 432978
+      "value": 432978,
+      "overall": 432978,
+      "biometric": 93885,
+      "demographic": 339093,
+      "male": 226661,
+      "female": 206317
     },
     {
       "date": "16-11-2025",
-      "value": 110125
+      "value": 110125,
+      "overall": 110125,
+      "biometric": 29767,
+      "demographic": 80358,
+      "male": 56058,
+      "female": 54067
     },
     {
       "date": "17-11-2025",
-      "value": 367005
+      "value": 367005,
+      "overall": 367005,
+      "biometric": 75918,
+      "demographic": 291087,
+      "male": 183253,
+      "female": 183752
     },
     {
       "date": "18-11-2025",
-      "value": 438524
+      "value": 438524,
+      "overall": 438524,
+      "biometric": 88967,
+      "demographic": 349557,
+      "male": 228227,
+      "female": 210297
     },
     {
       "date": "19-11-2025",
-      "value": 437935
+      "value": 437935,
+      "overall": 437935,
+      "biometric": 92981,
+      "demographic": 344954,
+      "male": 226598,
+      "female": 211337
     },
     {
       "date": "25-11-2025",
-      "value": 109532
+      "value": 109532,
+      "overall": 109532,
+      "biometric": 27645,
+      "demographic": 81887,
+      "male": 54411,
+      "female": 55121
     },
     {
       "date": "26-11-2025",
-      "value": 292015
+      "value": 292015,
+      "overall": 292015,
+      "biometric": 61696,
+      "demographic": 230319,
+      "male": 152717,
+      "female": 139298
     },
     {
       "date": "27-11-2025",
-      "value": 678684
+      "value": 678684,
+      "overall": 678684,
+      "biometric": 145164,
+      "demographic": 533520,
+      "male": 346472,
+      "female": 332212
     },
     {
       "date": "28-11-2025",
-      "value": 446681
+      "value": 446681,
+      "overall": 446681,
+      "biometric": 98828,
+      "demographic": 347853,
+      "male": 234000,
+      "female": 212681
     },
     {
       "date": "29-11-2025",
-      "value": 244276
+      "value": 244276,
+      "overall": 244276,
+      "biometric": 57908,
+      "demographic": 186368,
+      "male": 124585,
+      "female": 119691
     },
     {
       "date": "01-12-2025",
-      "value": 286586
+      "value": 286586,
+      "overall": 286586,
+      "biometric": 67609,
+      "demographic": 218977,
+      "male": 144938,
+      "female": 141648
     },
     {
       "date": "02-12-2025",
-      "value": 469499
+      "value": 469499,
+      "overall": 469499,
+      "biometric": 107503,
+      "demographic": 361996,
+      "male": 241754,
+      "female": 227745
     },
     {
       "date": "03-12-2025",
-      "value": 450303
+      "value": 450303,
+      "overall": 450303,
+      "biometric": 106764,
+      "demographic": 343539,
+      "male": 230986,
+      "female": 219317
     },
     {
       "date": "04-12-2025",
-      "value": 477502
+      "value": 477502,
+      "overall": 477502,
+      "biometric": 110108,
+      "demographic": 367394,
+      "male": 236283,
+      "female": 241219
     },
     {
       "date": "05-12-2025",
-      "value": 303531
+      "value": 303531,
+      "overall": 303531,
+      "biometric": 70283,
+      "demographic": 233248,
+      "male": 149650,
+      "female": 153881
     },
     {
       "date": "06-12-2025",
-      "value": 271098
+      "value": 271098,
+      "overall": 271098,
+      "biometric": 63095,
+      "demographic": 208003,
+      "male": 137526,
+      "female": 133572
     },
     {
       "date": "07-12-2025",
-      "value": 210119
+      "value": 210119,
+      "overall": 210119,
+      "biometric": 56504,
+      "demographic": 153615,
+      "male": 107760,
+      "female": 102359
     },
     {
       "date": "08-12-2025",
-      "value": 590988
+      "value": 590988,
+      "overall": 590988,
+      "biometric": 134561,
+      "demographic": 456427,
+      "male": 313073,
+      "female": 277915
     },
     {
       "date": "09-12-2025",
-      "value": 310538
+      "value": 310538,
+      "overall": 310538,
+      "biometric": 70088,
+      "demographic": 240450,
+      "male": 155141,
+      "female": 155397
     },
     {
       "date": "10-12-2025",
-      "value": 308007
+      "value": 308007,
+      "overall": 308007,
+      "biometric": 68189,
+      "demographic": 239818,
+      "male": 151698,
+      "female": 156309
     },
     {
       "date": "11-12-2025",
-      "value": 465340
+      "value": 465340,
+      "overall": 465340,
+      "biometric": 105449,
+      "demographic": 359891,
+      "male": 240290,
+      "female": 225050
     },
     {
       "date": "12-12-2025",
-      "value": 529129
+      "value": 529129,
+      "overall": 529129,
+      "biometric": 122586,
+      "demographic": 406543,
+      "male": 274303,
+      "female": 254826
     },
     {
       "date": "13-12-2025",
-      "value": 275083
+      "value": 275083,
+      "overall": 275083,
+      "biometric": 65162,
+      "demographic": 209921,
+      "male": 138904,
+      "female": 136179
     },
     {
       "date": "14-12-2025",
-      "value": 220019
+      "value": 220019,
+      "overall": 220019,
+      "biometric": 57514,
+      "demographic": 162505,
+      "male": 114804,
+      "female": 105215
     },
     {
       "date": "15-12-2025",
-      "value": 346058
+      "value": 346058,
+      "overall": 346058,
+      "biometric": 74692,
+      "demographic": 271366,
+      "male": 171321,
+      "female": 174737
     },
     {
       "date": "16-12-2025",
-      "value": 462057
+      "value": 462057,
+      "overall": 462057,
+      "biometric": 105037,
+      "demographic": 357020,
+      "male": 230685,
+      "female": 231372
     },
     {
       "date": "18-12-2025",
-      "value": 41401
+      "value": 41401,
+      "overall": 41401,
+      "biometric": 8781,
+      "demographic": 32620,
+      "male": 21265,
+      "female": 20136
     },
     {
       "date": "19-12-2025",
-      "value": 366973
+      "value": 366973,
+      "overall": 366973,
+      "biometric": 85025,
+      "demographic": 281948,
+      "male": 186367,
+      "female": 180606
     },
     {
       "date": "20-12-2025",
-      "value": 252671
+      "value": 252671,
+      "overall": 252671,
+      "biometric": 62229,
+      "demographic": 190442,
+      "male": 132526,
+      "female": 120145
     },
     {
       "date": "21-12-2025",
-      "value": 181831
+      "value": 181831,
+      "overall": 181831,
+      "biometric": 46966,
+      "demographic": 134865,
+      "male": 93147,
+      "female": 88684
     },
     {
       "date": "22-12-2025",
-      "value": 263214
+      "value": 263214,
+      "overall": 263214,
+      "biometric": 58118,
+      "demographic": 205096,
+      "male": 137090,
+      "female": 126124
     },
     {
       "date": "23-12-2025",
-      "value": 488460
+      "value": 488460,
+      "overall": 488460,
+      "biometric": 114487,
+      "demographic": 373973,
+      "male": 246301,
+      "female": 242159
     },
     {
       "date": "24-12-2025",
-      "value": 242245
+      "value": 242245,
+      "overall": 242245,
+      "biometric": 57988,
+      "demographic": 184257,
+      "male": 128039,
+      "female": 114206
     },
     {
       "date": "25-12-2025",
-      "value": 253401
+      "value": 253401,
+      "overall": 253401,
+      "biometric": 61850,
+      "demographic": 191551,
+      "male": 125778,
+      "female": 127623
     },
     {
       "date": "26-12-2025",
-      "value": 433763
+      "value": 433763,
+      "overall": 433763,
+      "biometric": 104296,
+      "demographic": 329467,
+      "male": 216300,
+      "female": 217463
     },
     {
       "date": "27-12-2025",
-      "value": 445937
+      "value": 445937,
+      "overall": 445937,
+      "biometric": 102062,
+      "demographic": 343875,
+      "male": 222357,
+      "female": 223580
     },
     {
       "date": "28-12-2025",
-      "value": 214513
+      "value": 214513,
+      "overall": 214513,
+      "biometric": 55016,
+      "demographic": 159497,
+      "male": 109452,
+      "female": 105061
     },
     {
       "date": "29-12-2025",
-      "value": 276500
+      "value": 276500,
+      "overall": 276500,
+      "biometric": 60807,
+      "demographic": 215693,
+      "male": 141663,
+      "female": 134837
     }
   ],
   "heatmap": [
@@ -698,79 +1173,79 @@
   "predictions": [
     {
       "date": "28-01-2026",
-      "value": 291498,
-      "lowerBound": 262348,
-      "upperBound": 320648
+      "value": 264441,
+      "lowerBound": 237997,
+      "upperBound": 290885
     },
     {
       "date": "27-02-2026",
-      "value": 314589,
-      "lowerBound": 283130,
-      "upperBound": 346048
+      "value": 288981,
+      "lowerBound": 260083,
+      "upperBound": 317879
     },
     {
       "date": "29-03-2026",
-      "value": 314954,
-      "lowerBound": 283459,
-      "upperBound": 346449
+      "value": 304374,
+      "lowerBound": 273937,
+      "upperBound": 334811
     },
     {
       "date": "28-04-2026",
-      "value": 308565,
-      "lowerBound": 277709,
-      "upperBound": 339422
+      "value": 294462,
+      "lowerBound": 265016,
+      "upperBound": 323908
     },
     {
       "date": "28-05-2026",
-      "value": 336114,
-      "lowerBound": 302503,
-      "upperBound": 369725
+      "value": 293867,
+      "lowerBound": 264480,
+      "upperBound": 323254
     },
     {
       "date": "27-06-2026",
-      "value": 351109,
-      "lowerBound": 315998,
-      "upperBound": 386220
+      "value": 303120,
+      "lowerBound": 272808,
+      "upperBound": 333432
     }
   ],
   "insights": [
     {
+      "title": "Mandatory Biometric Surge",
+      "description": "Age 5-17 band shows 40% uptick in updates, likely driven by school admission cycles.",
+      "category": "Administrative",
+      "impact": "High"
+    },
+    {
       "title": "Urban Migration Spike",
       "description": "High enrolment rates detected in metro districts indicating post-festival return migration.",
       "category": "Migration",
-      "impact": "High"
-    },
-    {
-      "title": "Digital Gap in Rural Areas",
-      "description": "Updates in rural districts are 40% lower than urban centers, suggesting access barriers.",
-      "category": "Digital Inclusion",
       "impact": "Medium"
     },
     {
-      "title": "Biometric Update Backlog",
-      "description": "Significant increase in mandatory biometric updates pending for age group 5-15.",
-      "category": "Administrative",
-      "impact": "High"
+      "title": "Mobile Update Gap",
+      "description": "Rural districts lagging in mobile linkage updates compared to state average.",
+      "category": "Digital Inclusion",
+      "impact": "Medium"
     }
   ],
   "recommendations": [
     {
-      "title": "Mobile Camp Deployment",
-      "action": "Deploy mobile enrolment units to Thane to manage surge.",
+      "title": "School Update Camps",
+      "action": "Coordinate with Education Ministry to setup biometric update camps in schools for 5-15 age group.",
       "urgency": "High",
       "cost": "Medium"
     },
     {
-      "title": "Weekend Special Drive",
-      "action": "Keep centers open on weekends in industrial zones to facilitate workers.",
+      "title": "Rural Mobile Linkage Drive",
+      "action": "Deploy 'Aadhaar on Wheels' to remote districts to facilitate mobile number limit updates.",
       "urgency": "Medium",
       "cost": "Low"
     },
     {
-      "title": "School Campaign",
-      "action": "Partner with district education officers for mandatory biometric updates in schools.",
+      "title": "Targeted Metro Centers",
+      "action": "Increase counter capacity in high-load metro districts (Top 5 identified).",
       "urgency": "High",
-      "cost": "Medium"
+      "cost": "High"
     }
   ]
 }

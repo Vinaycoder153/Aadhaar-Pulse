@@ -8,6 +8,70 @@ if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
 }
 
+// Canonical state name map: normalise variations found in raw data
+const STATE_CANONICAL = {
+    'uttar pradesh': 'Uttar Pradesh',
+    'maharashtra': 'Maharashtra',
+    'bihar': 'Bihar',
+    'west bengal': 'West Bengal',
+    'westbengal': 'West Bengal',
+    'west bangal': 'West Bengal',
+    'west bengli': 'West Bengal',
+    'west bengal ': 'West Bengal',
+    'madhya pradesh': 'Madhya Pradesh',
+    'rajasthan': 'Rajasthan',
+    'andhra pradesh': 'Andhra Pradesh',
+    'tamil nadu': 'Tamil Nadu',
+    'chhattisgarh': 'Chhattisgarh',
+    'chhatisgarh': 'Chhattisgarh',
+    'gujarat': 'Gujarat',
+    'karnataka': 'Karnataka',
+    'telangana': 'Telangana',
+    'delhi': 'Delhi',
+    'jharkhand': 'Jharkhand',
+    'haryana': 'Haryana',
+    'odisha': 'Odisha',
+    'orissa': 'Odisha',
+    'assam': 'Assam',
+    'punjab': 'Punjab',
+    'kerala': 'Kerala',
+    'uttarakhand': 'Uttarakhand',
+    'uttaranchal': 'Uttarakhand',
+    'jammu and kashmir': 'Jammu & Kashmir',
+    'jammu & kashmir': 'Jammu & Kashmir',
+    'manipur': 'Manipur',
+    'himachal pradesh': 'Himachal Pradesh',
+    'tripura': 'Tripura',
+    'meghalaya': 'Meghalaya',
+    'chandigarh': 'Chandigarh',
+    'mizoram': 'Mizoram',
+    'nagaland': 'Nagaland',
+    'arunachal pradesh': 'Arunachal Pradesh',
+    'goa': 'Goa',
+    'puducherry': 'Puducherry',
+    'pondicherry': 'Puducherry',
+    'sikkim': 'Sikkim',
+    'andaman and nicobar islands': 'Andaman & Nicobar Islands',
+    'andaman & nicobar islands': 'Andaman & Nicobar Islands',
+    'dadra and nagar haveli': 'Dadra & Nagar Haveli',
+    'dadra & nagar haveli': 'Dadra & Nagar Haveli',
+    'dadra and nagar haveli and daman and diu': 'Dadra & Nagar Haveli',
+    'daman and diu': 'Daman & Diu',
+    'daman & diu': 'Daman & Diu',
+    'ladakh': 'Ladakh',
+    'lakshadweep': 'Lakshadweep',
+};
+
+function canonicalState(raw) {
+    const key = raw.trim().replace(/\s+/g, ' ').toLowerCase();
+    return STATE_CANONICAL[key] || STATE_CANONICAL[key.replace(/\s+/g, '')] || null;
+}
+
+const VALID_STATES = new Set(Object.values(STATE_CANONICAL));
+function isValidState(name) {
+    return name !== null && VALID_STATES.has(name);
+}
+
 function processData() {
     const files = fs.readdirSync(dataDir).filter(f => f.startsWith('api_data_aadhar_demographic') && f.endsWith('.csv'));
 
@@ -16,6 +80,8 @@ function processData() {
         byState: {},
         byDistrict: {}
     };
+    let totalRecords = 0;
+    let totalEnrolments = 0;
 
     console.log(`Found ${files.length} files. Processing...`);
 
@@ -33,11 +99,17 @@ function processData() {
             if (parts.length < 6) continue;
 
             const date = parts[0]; // DD-MM-YYYY
-            const state = parts[1];
-            const district = parts[2];
+            const rawState = parts[1];
+            const state = canonicalState(rawState);
+            if (!isValidState(state)) continue;
+
+            const district = parts[2].trim();
             const val_5_17 = parseInt(parts[4]) || 0;
             const val_17_plus = parseInt(parts[5]) || 0;
             const total = val_5_17 + val_17_plus;
+
+            totalRecords++;
+            totalEnrolments += total;
 
             // Date Aggregation with Age Breakdown
             if (!stats.byDate[date]) {
@@ -200,7 +272,14 @@ function processData() {
         topDistricts,
         predictions,
         insights,
-        recommendations
+        recommendations,
+        summary: {
+            totalRecords,
+            totalEnrolments,
+            totalStates: heatmap.length,
+            totalDistricts: Object.keys(stats.byDistrict).length,
+            dateRange: trends.length > 0 ? { from: trends[0].date, to: trends[trends.length - 1].date } : null
+        }
     };
 
     fs.writeFileSync(path.join(outputDir, 'summary.json'), JSON.stringify(result, null, 2));

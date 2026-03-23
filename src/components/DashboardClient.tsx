@@ -9,6 +9,8 @@ import PredictiveChart from './PredictiveChart';
 import SocietalInsights from './SocietalInsights';
 import PolicyRecommendations from './PolicyRecommendations';
 import StoryVisualizer from './StoryVisualizer';
+import StatsBar from './StatsBar';
+import Footer from './Footer';
 import styles from '@/app/page.module.css';
 
 export default function DashboardClient({ data }: { data: DashboardData }) {
@@ -41,9 +43,9 @@ export default function DashboardClient({ data }: { data: DashboardData }) {
                                 Start Story Mode
                                 <span className="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
                             </button>
-                            <button className="px-6 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-colors font-medium">
-                                View Documentation
-                            </button>
+                            <a href="#stats" className="px-6 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-colors font-medium">
+                                Explore Data
+                            </a>
                         </div>
                     </div>
 
@@ -54,31 +56,41 @@ export default function DashboardClient({ data }: { data: DashboardData }) {
                 </div>
             </section>
 
+            {/* KPI Stats Bar */}
+            {data.summary && <StatsBar stats={data.summary} />}
+
             {/* Core Intelligence Grid */}
-            <section className="py-20 container mx-auto px-4 relative z-10">
+            <section className="py-12 container mx-auto px-4 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                     {/* Top Row: Heatmap (8) + Anomaly (4) */}
-                    <div className="md:col-span-8 h-[400px]">
+                    <div id="heatmap" className="md:col-span-8 h-[420px]">
                         <InequalityHeatmap data={data.heatmap} />
                     </div>
-                    <div className="md:col-span-4 h-[400px]">
+                    <div id="anomaly" className="md:col-span-4 h-[420px]">
                         <AnomalyRadar data={data.topDistricts} />
                     </div>
 
+                    {/* Trend Explorer (full row) */}
+                    <div id="trends" className="md:col-span-12 h-[420px]">
+                        <TrendExplorer data={data.trends} />
+                    </div>
+
                     {/* Middle Row: Prediction (8) + Insights (4) */}
-                    <div className="md:col-span-8 h-[400px]">
+                    <div id="predictions" className="md:col-span-8 h-[420px]">
                         <PredictiveChart data={data.predictions} />
                     </div>
-                    <div className="md:col-span-4 h-[400px]">
+                    <div className="md:col-span-4 h-[420px]">
                         <SocietalInsights data={data.insights} />
                     </div>
 
                     {/* Bottom Row: Policy Recommendations (Full) */}
-                    <div className="md:col-span-12">
+                    <div id="policy" className="md:col-span-12">
                         <PolicyRecommendations data={data.recommendations} />
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </div>
     );
 }

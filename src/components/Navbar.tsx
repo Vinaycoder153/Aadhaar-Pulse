@@ -5,22 +5,24 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={`container ${styles.navContainer}`}>
-                <div className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <div className={styles.logoIcon}>
                         <div className={styles.pulse} />
                     </div>
                     <span className={styles.logoText}>Aadhaar<span className={styles.highlight}>Pulse</span></span>
-                </div>
+                </Link>
 
                 <div className={styles.navLinks}>
                     <Link href="#trends" className={styles.navLink}>Explorer</Link>
                     <Link href="#heatmap" className={styles.navLink}>Heatmap</Link>
                     <Link href="#anomaly" className={styles.navLink}>Anomalies</Link>
+                    <Link href="#predictions" className={styles.navLink}>Forecast</Link>
+                    <Link href="#policy" className={styles.navLink}>Policy</Link>
                 </div>
 
-                <button className="btn-primary">
-                    Launch Dashboard
-                </button>
+                <a href="#stats" className="btn-primary">
+                    View Stats
+                </a>
             </div>
         </nav>
     );

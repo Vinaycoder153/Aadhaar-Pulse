@@ -40,6 +40,14 @@ export interface RecommendationData {
     cost: 'High' | 'Medium' | 'Low';
 }
 
+export interface SummaryStats {
+    totalRecords: number;
+    totalEnrolments: number;
+    totalStates: number;
+    totalDistricts: number;
+    dateRange: { from: string; to: string } | null;
+}
+
 export interface DashboardData {
     trends: TrendData[];
     heatmap: StateData[];
@@ -47,4 +55,5 @@ export interface DashboardData {
     predictions: PredictionData[];
     insights: InsightData[];
     recommendations: RecommendationData[];
+    summary?: SummaryStats;
 }

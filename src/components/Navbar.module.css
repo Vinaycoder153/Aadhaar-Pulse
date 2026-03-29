@@ -9,6 +9,7 @@
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding: 1rem 0;
+    transition: background 0.3s, border-color 0.3s;
 }
 
 .navContainer {
@@ -99,8 +100,51 @@
     color: var(--text-main);
 }
 
+/* Live badge */
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.08);
+    border: 1px solid rgba(74, 222, 128, 0.25);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.badgeDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4ade80;
+    animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.launchBtn {
+    font-size: 0.875rem;
+}
+
 @media (max-width: 768px) {
     .navLinks {
+        display: none;
+    }
+
+    .badge {
         display: none;
     }
 }

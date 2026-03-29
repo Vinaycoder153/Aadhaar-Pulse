@@ -16,12 +16,26 @@ export default function Navbar() {
                     <Link href="#trends" className={styles.navLink}>Explorer</Link>
                     <Link href="#heatmap" className={styles.navLink}>Heatmap</Link>
                     <Link href="#anomaly" className={styles.navLink}>Anomalies</Link>
+                    <Link href="#predictions" className={styles.navLink}>Predictions</Link>
+                    <Link href="#policy" className={styles.navLink}>Policy</Link>
                 </div>
 
-                <button className="btn-primary">
-                    Launch Dashboard
-                </button>
+                <div className={styles.navRight}>
+                    <span className={styles.badge}>
+                        <span className={styles.badgeDot} />
+                        Live
+                    </span>
+                    <a
+                        href="https://github.com/Vinaycoder153/Aadhaar-Pulse"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`btn-primary ${styles.launchBtn}`}
+                    >
+                        Launch Dashboard
+                    </a>
+                </div>
             </div>
         </nav>
     );
 }
+

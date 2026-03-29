@@ -16,7 +16,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Aadhaar Pulse | Visual Intelligence for Societal Trends",
-  description: "Interactive visual intelligence system for Aadhaar data analysis and prediction.",
+  description: "Interactive visual intelligence system for Aadhaar data analysis, anomaly detection and AI-powered prediction.",
+  keywords: ["Aadhaar", "UIDAI", "analytics", "dashboard", "data visualization"],
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning style={{ scrollBehavior: 'smooth' }}>
       <body className={`${inter.variable} ${outfit.variable} antialiased`}>
         {children}
       </body>

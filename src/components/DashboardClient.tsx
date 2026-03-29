@@ -9,6 +9,8 @@ import PredictiveChart from './PredictiveChart';
 import SocietalInsights from './SocietalInsights';
 import PolicyRecommendations from './PolicyRecommendations';
 import StoryVisualizer from './StoryVisualizer';
+import StatsBar from './StatsBar';
+import Footer from './Footer';
 import styles from '@/app/page.module.css';
 
 export default function DashboardClient({ data }: { data: DashboardData }) {
@@ -21,6 +23,9 @@ export default function DashboardClient({ data }: { data: DashboardData }) {
             {/* Main Hero */}
             <section className={`${styles.hero} container mx-auto px-4`}>
                 <div className={styles.heroGlow} />
+                {/* Subtle grid overlay */}
+                <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
+
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="z-10 animate-slide-up">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6 text-sm">
@@ -36,14 +41,36 @@ export default function DashboardClient({ data }: { data: DashboardData }) {
                         <p className="text-xl text-[var(--text-muted)] mb-10 max-w-lg leading-relaxed">
                             Visual intelligence for societal trends. Detect anomalies, predict demand, and generate policy insights in real-time.
                         </p>
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 flex-wrap">
                             <button onClick={() => setShowStory(true)} className="btn-primary group">
                                 Start Story Mode
                                 <span className="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
                             </button>
-                            <button className="px-6 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-colors font-medium">
-                                View Documentation
-                            </button>
+                            <a
+                                href="https://github.com/Vinaycoder153/Aadhaar-Pulse"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-6 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-colors font-medium"
+                            >
+                                View on GitHub
+                            </a>
+                        </div>
+
+                        {/* Floating Info Badges */}
+                        <div className="mt-10 flex flex-wrap gap-3">
+                            {[
+                                { icon: '🔒', text: 'Privacy-First Analytics' },
+                                { icon: '⚡', text: 'Real-Time Processing' },
+                                { icon: '🧠', text: 'AI-Powered Insights' },
+                            ].map(b => (
+                                <div
+                                    key={b.text}
+                                    className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/8 text-xs text-[var(--text-muted)]"
+                                >
+                                    <span>{b.icon}</span>
+                                    <span>{b.text}</span>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
@@ -54,31 +81,57 @@ export default function DashboardClient({ data }: { data: DashboardData }) {
                 </div>
             </section>
 
+            {/* KPI Stats Bar */}
+            <StatsBar data={data} />
+
+            {/* Section Divider */}
+            <div className="container mx-auto px-4 mb-4">
+                <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            </div>
+
             {/* Core Intelligence Grid */}
-            <section className="py-20 container mx-auto px-4 relative z-10">
+            <section className="py-12 container mx-auto px-4 relative z-10">
+                {/* Section Header */}
+                <div className="mb-10 text-center">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-4 text-xs text-[var(--text-muted)]">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]" />
+                        Intelligence Modules
+                    </div>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-3">
+                        Full-Spectrum <span className="text-gradient">Analytics Dashboard</span>
+                    </h2>
+                    <p className="text-[var(--text-muted)] max-w-xl mx-auto">
+                        Explore regional distributions, detect real-time anomalies, and forecast demand with AI-driven predictions.
+                    </p>
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                     {/* Top Row: Heatmap (8) + Anomaly (4) */}
-                    <div className="md:col-span-8 h-[400px]">
+                    <div id="heatmap" className="md:col-span-8 h-[400px]">
                         <InequalityHeatmap data={data.heatmap} />
                     </div>
-                    <div className="md:col-span-4 h-[400px]">
+                    <div id="anomaly" className="md:col-span-4 h-[400px]">
                         <AnomalyRadar data={data.topDistricts} />
                     </div>
 
                     {/* Middle Row: Prediction (8) + Insights (4) */}
-                    <div className="md:col-span-8 h-[400px]">
+                    <div id="predictions" className="md:col-span-8 h-[400px]">
                         <PredictiveChart data={data.predictions} />
                     </div>
-                    <div className="md:col-span-4 h-[400px]">
+                    <div className="md:col-span-4 h-[400px] overflow-y-auto custom-scrollbar" tabIndex={0}>
                         <SocietalInsights data={data.insights} />
                     </div>
 
                     {/* Bottom Row: Policy Recommendations (Full) */}
-                    <div className="md:col-span-12">
+                    <div id="policy" className="md:col-span-12">
                         <PolicyRecommendations data={data.recommendations} />
                     </div>
                 </div>
             </section>
+
+            {/* Footer */}
+            <Footer />
         </div>
     );
 }
+
